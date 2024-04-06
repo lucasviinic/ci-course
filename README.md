@@ -18,3 +18,10 @@
 - What are the main fields of the jobs, having `runs-on` to choose the system, `steps` in conjunction with `run` to execute code, and `name` to name each step.
 - How to execute code within the CI routine, so that we can prepare the environment and run the application tests, ensuring its logic.
 - Starting a Docker container using `docker-compose up` within a pipeline, thus facilitating the environment setup.
+
+## Lesson 4: Second Routine
+
+- Change the execution order of commands within each job, making them faster, as in the case of tests and compilation, where it is not necessary to spend time compiling if the tests fail;
+- Create a second job, which allows better separation of each function within the routine, facilitating the identification of problems and long-term maintenance;
+- View routines in Github Actions, and check if any errors occurred and access the execution logs;
+- Force an error, thus understanding what happens if this is encountered in the application and how this error is displayed for those who access the repository.
