@@ -19,9 +19,15 @@
 - How to execute code within the CI routine, so that we can prepare the environment and run the application tests, ensuring its logic.
 - Starting a Docker container using `docker-compose up` within a pipeline, thus facilitating the environment setup.
 
-## Lesson 4: Second Routine
+### Lesson 4: Second Routine
 
 - Change the execution order of commands within each job, making them faster, as in the case of tests and compilation, where it is not necessary to spend time compiling if the tests fail;
 - Create a second job, which allows better separation of each function within the routine, facilitating the identification of problems and long-term maintenance;
 - View routines in Github Actions, and check if any errors occurred and access the execution logs;
 - Force an error, thus understanding what happens if this is encountered in the application and how this error is displayed for those who access the repository.
+
+### Lesson 5: Utilizing strategies
+
+- Working with matrix strategies enables the creation of various different development environments with minimal code, making the routine more organized.
+- Creating and utilizing variables, such as go_version within the matrix strategy, allows for storing multiple values for later use.
+- Utilizing secrets and thus creating an environment by placing a secret within it enables its use within the routine without sharing its value.
